@@ -1,7 +1,7 @@
 import styles from './TodoList.module.css'
 import svg from '../assets/Clipboard.svg'
 import { CheckCircle, Circle, Trash } from 'phosphor-react';
-import { Task } from './NewTask';
+import { Task } from './Task';
 
 interface TaskListProps {
   content: Task[],

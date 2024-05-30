@@ -1,5 +1,5 @@
 import { PlusCircle } from "phosphor-react"
-import styles from './NewTask.module.css'
+import styles from './Task.module.css'
 import { ChangeEvent, FormEvent, useState } from "react";
 import { TodoList } from "./TodoList";
 
