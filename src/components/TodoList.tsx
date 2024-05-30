@@ -73,6 +73,7 @@ export function TodoList( { content,  changeState} : TaskListProps) {
             <div className={styles.btnFinishedTaskContainer}>
               {task.isActive ? 
                 (<Circle 
+                  className={styles.circle}
                   size={20}
                   weight='bold'
                   onClick={() => handleInactiveTask(task)}

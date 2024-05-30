@@ -101,6 +101,11 @@
   color: var(--purple-dark);
 }
 
+.circle:hover {
+  color: var(--blue-dark);
+}
+
+
 .todoListTasksContainer svg:has(polyline) circle {
   background: var(--purple-dark);
 }
