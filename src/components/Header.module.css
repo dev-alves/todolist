@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-700);
+  height: 12.5rem;
+  width: 100%;
+}
+
+.logosContainer {
+  display: flex;
+  width: 8rem;
+  height: 3rem;
+  justify-content: center;
+}
+
+.logosContainer > div:first-child {
+  margin-right: 0.75rem;
+}

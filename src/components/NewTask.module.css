@@ -1,0 +1,55 @@
+.taskContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -1.6rem;
+}
+
+.inputTask > input {
+  padding: 0 1rem;
+  height: 3.37rem;
+  width: 39.875rem;
+  background: var(--gray-500);
+  border-radius: 8px;
+  color:  var(--gray-300);
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-right: 0.5rem;
+}
+
+.inputTask > input:focus {
+  outline: 1px solid var(--gray-400);
+}
+
+.btnTask > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-100);
+  background: var(--blue-dark);
+  border: 0;
+  width: 5.6rem;
+  height: 3.25rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button > svg {
+  margin-left: 0.5rem;
+}
+
+.todoListContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.5rem;
+}

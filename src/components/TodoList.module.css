@@ -1,0 +1,125 @@
+.todoListContainer {
+  max-width: 15.9rem;
+  max-height: 20.6rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 15.57rem;
+  height: 1.18rem;
+  border: 1px solid var(--gray-700);
+}
+
+.createdTask {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 0.5rem;
+}
+
+.totalCreated {
+  display: inline-block;
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.finishedTask {
+  color: var(--purple);
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 0.5rem;
+}
+
+.totalFinished {
+  display: inline-block;
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.todoList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 24px;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--gray-300);
+  border-radius: 8px;
+}
+
+.todoList img {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.todoInfo {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--gray-300);
+}
+
+.todoInfo p:first-child {
+  font-weight: bold;
+}
+
+.todoListContainerWithValue > div {
+  width: 46rem;
+}
+
+.headerWithValues  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todoListTasksContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 46rem;
+  height: 4.5rem;
+  padding: 1rem;
+  background: var(--gray-500);
+  border-radius: 8px;
+}
+
+.todoListTasksContainer svg {
+  cursor: pointer;
+  color: var(--blue)
+}
+
+.todoListTasksContainer svg:has(polyline) {
+  color: var(--purple-dark);
+}
+
+.todoListTasksContainer svg:has(polyline) circle {
+  background: var(--purple-dark);
+}
+
+.contentContainer {
+  text-align: left;
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  width: 100%;
+}
+
+.contentContainer s {
+  transition: opacity 1s ease-out;
+  color: var(--gray-300);
+}
+
+.btnDeleteContainer > svg {
+  cursor: pointer;
+  color: var(--gray-300);
+}
