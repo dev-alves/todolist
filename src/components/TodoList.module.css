@@ -92,22 +92,31 @@
   border-radius: 8px;
 }
 
-.todoListTasksContainer svg {
+.circle {
   cursor: pointer;
-  color: var(--blue)
-}
-
-.todoListTasksContainer svg:has(polyline) {
-  color: var(--purple-dark);
+  color: var(--blue);
 }
 
 .circle:hover {
   color: var(--blue-dark);
 }
 
+.checkedCircle {
+  cursor: pointer;
+}
 
-.todoListTasksContainer svg:has(polyline) circle {
-  background: var(--purple-dark);
+.checkedCircle > circle:first-of-type {
+  opacity: 1 !important;
+  fill: var(--purple-dark);
+  stroke: var(--purple-dark);
+}
+
+.checkedCircle polyline {
+  stroke: var(--gray-100) !important;
+}
+
+.checkedCircle > circle {
+  stroke: var(--purple-dark);
 }
 
 .contentContainer {

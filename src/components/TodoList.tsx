@@ -8,7 +8,7 @@ interface TaskListProps {
   changeState: (array: Task[]) => void
 }
 
-export function TodoList( { content,  changeState} : TaskListProps) {
+export function TodoList( { content,  changeState } : TaskListProps) {
 
   const allFinished = content.filter(task => !task.isActive).length;
   const allTasks = content.length;
@@ -75,11 +75,11 @@ export function TodoList( { content,  changeState} : TaskListProps) {
                 (<Circle 
                   className={styles.circle}
                   size={20}
-                  weight='bold'
                   onClick={() => handleInactiveTask(task)}
                 />) : (<CheckCircle
                   size={20}
-                  weight="duotone" 
+                  weight="duotone"
+                  className={styles.checkedCircle}
                   onClick={() => handleActiveTask(task)}
                 />)
               }
