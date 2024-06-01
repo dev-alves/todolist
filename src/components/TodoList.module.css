@@ -103,6 +103,7 @@
 
 .checkedCircle {
   cursor: pointer;
+  animation: fadeIn 1s;
 }
 
 .checkedCircle > circle:first-of-type {
@@ -129,11 +130,21 @@
 }
 
 .contentContainer s {
-  transition: opacity 1s ease-out;
   color: var(--gray-300);
+  animation: fadeOut 0.5s;
 }
 
 .btnDeleteContainer > svg {
   cursor: pointer;
   color: var(--gray-300);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  100% { opacity: 1; }
+  0% { opacity: 0.2; }
 }
